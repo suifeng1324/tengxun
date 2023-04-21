@@ -5,15 +5,15 @@ import requests
 
 re = requests.session()
 # 10.202.64.51 为要修改的ip
-url = 'https://rpaprd.mtr.bj.cn/v1/authentication'
-url1 = 'https://rpaprd.mtr.bj.cn/v3/automations/deploy'
-url2 = 'https://rpaprd.mtr.bj.cn/v2/activity/list'
+url = 'https://xxxxx/v1/authentication'
+url1 = 'https://xxxxx/v3/automations/deploy'
+url2 = 'https://xxxxx/v2/activity/list'
 
 # username 为登录的用户名
 # password 为登录的密码
 data = {
-    'username': 'prdu03',
-    'password': '1234.com'
+    'username': 'xxxx',
+    'password': 'xxxxx'
 }
 data = json.dumps(data)
 
@@ -49,7 +49,7 @@ print('-----------------------------------------------')
 # operator 为登录的用户名
 body = {
     "filter": {
-        "operator": "prdu03",
+        "operator": "xxxxx",
         "field": "deploymentId",
         "value": r.json()['deploymentId']
     }
