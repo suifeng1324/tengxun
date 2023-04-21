@@ -4,7 +4,7 @@ import json
 import requests
 
 re = requests.session()
-# 10.202.64.51 为要修改的ip
+# 10.12.4.1 为要修改的ip
 url = 'https://xxxxx/v1/authentication'
 url1 = 'https://xxxxx/v3/automations/deploy'
 url2 = 'https://xxxxx/v2/activity/list'
